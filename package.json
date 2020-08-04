@@ -1,0 +1,28 @@
+{
+	"name": "webdriver-io-practice",
+	"version": "1.0.0",
+	"description": "for learn webdriver io",
+	"main": "index.js",
+	"scripts": {
+		"test": "node ./node_modules/.bin/wdio ./wdio.conf.js"
+	},
+	"keywords": [],
+	"author": "Wildan Abdullah",
+	"license": "ISC",
+	"devDependencies": {
+		"@wdio/allure-reporter": "^6.3.6",
+		"@wdio/cli": "^6.3.6",
+		"@wdio/local-runner": "^6.3.6",
+		"@wdio/mocha-framework": "^6.3.6",
+		"@wdio/spec-reporter": "^6.3.6",
+		"@wdio/sync": "^6.3.6",
+		"babel-cli": "^6.26.0",
+		"babel-preset-latest": "^6.24.1",
+		"chai": "^4.2.0",
+		"chai-webdriverio": "^1.0.0",
+		"chromedriver": "^83.0.0",
+		"eslint": "^7.6.0",
+		"wdio-chromedriver-service": "^6.0.3",
+		"webdriverio": "^6.3.6"
+	}
+}
