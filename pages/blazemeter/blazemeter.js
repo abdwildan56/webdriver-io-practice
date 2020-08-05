@@ -1,7 +1,7 @@
 class BlazePage {
 
     get parent(){
-        return $$('#main-nav ul.list-nav-links');
+        return $('#main-nav ul.list-nav-links');
     };
 
     get childElements(){
