@@ -18,10 +18,22 @@ class BlazePage {
         return $$('#main_b_footer_second_block>ul>li');
     };
 
+    get useCasesElementParent(){
+        return $('#main_b_footer_second_block>ul');
+    }
+
     get useCasesElementsText(){
         return this.useCasesElements.filter(element => {
             console.log(element.getText());
         });
+    };
+
+    spesifChildElement(index){
+        return this.useCasesElementParent.$(`li:nth-child(${index})`)
+    };
+
+    getSpesicificChildElementText(index){
+        console.log(this.spesifChildElement(index).getText());
     };
 
 };

@@ -6,6 +6,8 @@ describe('blaze page elements handle', () => {
         browser.url('https://www.blazemeter.com/');
         blazePage.getTextForLi;
         blazePage.useCasesElementsText;
+
+        blazePage.getSpesicificChildElementText(4);
     })
 
 })
