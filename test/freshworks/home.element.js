@@ -1,5 +1,5 @@
 // import * as base from '../common/base-function';
-const homePage = require('../pages/homepage');
+const homePage = require('../../pages/freshworks/homepage');
 
 describe("home page elements handler", () => {
 
