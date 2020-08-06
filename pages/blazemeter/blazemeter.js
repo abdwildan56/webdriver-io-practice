@@ -1,4 +1,22 @@
 class BlazePage {
+    
+    get mainHeaderVideo(){
+        return $('h2.home_video__title');
+    }
+
+    get menuButton(){
+        return $('#main_mobile_hamburger');
+    }
+
+    clickOnMenuButton(){
+        if(this.menuButton.isDisplayed() === true){
+            this.menuButton.click();
+        };
+    };
+
+    get jMeterLink(){
+        return $('div#main_b_footer_second_block li:nth-of-type(2)');
+    }
 
     get parent(){
         return $('#main-nav ul.list-nav-links');
