@@ -1,26 +1,38 @@
 module.exports = {
-    "extends": "airbnb-base",
-    "root": true,
-    "env": {
-      "jest": true
-    },
-    "rules": {
-      "prefer-destructuring": ["error", {
-        "VariableDeclarator": {
-          "object": true,
-          "array": true,
-        },
-      }, {
-        "enforceForRenamedProperties": false
-      }],
-      "import/no-cycle": "[0, { maxDepth: 2 }]",
-      "max-len": "off",
-      "linebreak-style": 0,
-      "class-methods-use-this": 0,
-      "no-unused-expressions": 0
-    },
-    "globals": {
-      "resp": true,
-      "body": true,
-    }
-  }
+  env: {
+    browser: true,
+    es2020: true,
+    node: true,
+    mocha: true,
+    amd: true,
+  },
+  globals: {
+    $: true,
+    $$: true,
+    browser: true,
+    expect: true,
+  },
+  extends: [
+    'airbnb-base',
+  ],
+  parserOptions: {
+    ecmaVersion: 11,
+    sourceType: 'module',
+  },
+  rules: {
+    'import/no-extraneous-dependencies': ['error', {
+      devDependencies: true,
+      optionalDependencies: false,
+      peerDependencies: false,
+    }],
+    'arrow-parents': [0, 'as-needed'],
+    'require-jsdoc': 'off',
+    'brace-style': [0, 'allman', { allowSingleLine: true }],
+    'max-len': ['error', { ignoreComments: true }],
+    'object-curly-spacing': ['error', 'always'],
+    'linebreak-style': ['error', 'unix'],
+    'global-require': 0,
+    semi: ['error', 'always'],
+    'array-callback-return': ['error', { allowImplicit: true }],
+  },
+};

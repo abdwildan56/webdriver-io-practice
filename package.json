@@ -22,6 +22,8 @@
 		"chai-webdriverio": "^1.0.0",
 		"chromedriver": "^83.0.0",
 		"eslint": "^7.6.0",
+		"eslint-config-airbnb-base": "^14.2.0",
+		"eslint-plugin-import": "^2.22.0",
 		"wdio-chromedriver-service": "^6.0.3",
 		"webdriverio": "^6.3.6"
 	}
