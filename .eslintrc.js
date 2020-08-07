@@ -11,6 +11,8 @@ module.exports = {
     $$: true,
     browser: true,
     expect: true,
+    assert: true,
+    should: true,
   },
   extends: [
     'airbnb-base',
@@ -34,5 +36,10 @@ module.exports = {
     'global-require': 0,
     semi: ['error', 'always'],
     'array-callback-return': ['error', { allowImplicit: true }],
+    'lines-between-class-members': [
+      'error',
+      'always',
+      { exceptAfterSingleLine: true },
+    ],
   },
 };
