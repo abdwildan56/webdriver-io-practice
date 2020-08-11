@@ -41,5 +41,6 @@ module.exports = {
       'always',
       { exceptAfterSingleLine: true },
     ],
+    'class-methods-use-this': 0,
   },
 };
